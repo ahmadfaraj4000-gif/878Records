@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>878 Records</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css?v=13" />
+
+    <style>
+      .new-track-banner {
+        margin: 28px auto 10px auto;
+        max-width: 720px;
+        padding: 18px 22px;
+        border-radius: 18px;
+        border: 1px solid rgba(250, 204, 21, 0.4);
+        background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.14), rgba(15, 23, 42, 0.96));
+        text-align: center;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        animation: bannerEnter 1.1s ease-out forwards;
+      }
+
+      .new-track-tag {
+        font-size: 0.8rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #facc15;
+        opacity: 0.9;
+        margin-bottom: 6px;
+      }
+
+      .new-track-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #f9fafb;
+        margin: 4px 0;
+      }
+
+      .new-track-subtitle {
+        font-size: 0.9rem;
+        color: rgba(226, 232, 240, 0.92);
+        margin-top: 4px;
+      }
+
+      .new-track-banner .square-buy-button {
+        margin-top: 14px;
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      @keyframes bannerEnter {
+        0% { opacity: 0; transform: translateY(28px) scale(0.95); }
+        55% { opacity: 1; transform: translateY(-6px) scale(1.03); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="main-card">
+
+        <header>
+          <div class="site-title">878 Records</div>
+          <div class="site-subtitle">Independent Music Collective</div>
+        </header>
+
+        <nav class="nav-tabs">
+          <a class="nav-tab" href="index.html">Home</a>
+          <a class="nav-tab" href="ambient-act.html">Ambient Act</a>
+          <a class="nav-tab" href="torok.html">Torok</a>
+          <a class="nav-tab" href="vendetta.html">Vendetta</a>
+          <a class="nav-tab" href="onkc-beats.html">ONKCBeats</a>
+          <a class="nav-tab" href="store.html">Store</a>
+          <a class="nav-tab" href="plugins.html">Plugins</a>
+        </nav>
+
+        <main class="content">
+      
+       <!-- FEATURED VIDEO BANNER -->
+<section class="new-track-banner">
+  <div id="videoTag" class="new-track-tag">New Visual Release</div>
+
+  <div id="heroTitle" class="new-track-title">
+    KDOTZ — Dark Reflection
+  </div>
+
+  <p id="heroSubtitle" class="new-track-subtitle">
+   KDOTZ stands out not only as the artist behind this record, but also as the creative force
+driving the visual itself. Handling both performance and direction, he translates the
+song’s emotional weight directly to the screen — using shadow, pacing, and restraint
+to mirror the internal conflict at the core of the track.
+  </p>
+
+  <div style="margin-top: 16px; border-radius: 14px; overflow: hidden;">
+    <iframe
+      id="featuredVideo"
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/wDRYFmNaLuI"
+      title="Featured Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- FEATURED TRACK BANNER -->
+<section class="new-track-banner">
+  <div id="trackTag" class="new-track-tag">
+    Pre-Purchase Our Upcoming Track!
+  </div>
+
+  <div id="trackTitle" class="new-track-title">
+    “Come Up” · Ambient Act x ONKCBeats
+  </div>
+
+  <p id="trackSubtitle" class="new-track-subtitle">
+    A hard-hitting trap/R&B fusion built around punchy drums, warped synths, and smooth melodic vocals — an anthem about rising above the noise and leveling up.
+  </p>
+
+  <a
+    id="trackButton"
+    class="square-buy-button"
+    href="store.html"
+  >
+    Exclusive Access to “Come Up”
+  </a>
+</section>
+
+<div class="album-description">
+<div class="track-list">
+
+<div class="embed-player">
+  <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/album/0xjLFluM2k8BxvQ592CvQW?utm_source=generator"
+      width="100%" height="152" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+  </iframe>
+</div>
+
+<div class="album-streaming-tag">Senioritis</div>
+<h1>Now Streaming!</h1>
+
+<p class="album-text">
+Senioritis is a new record from Ambient Act is the culmination of years spent refining a unique blend 
+of hip-hop production, sampling, and storytelling.
+</p>
+
+</div>
+</div>
+
+        </main>
+
+        <footer class="footer">
+          © 878 Records · All Rights Reserved
+        </footer>
+
+      </div>
+    </div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDi3--yaNha7pu2OjfoYh8hQFwQlT0soWo",
+    authDomain: "records-website-2f8fe.firebaseapp.com",
+    projectId: "records-website-2f8fe",
+    storageBucket: "records-website-2f8fe.firebasestorage.app",
+    messagingSenderId: "456307633504",
+    appId: "1:456307633504:web:b78fbb00d0bd1e87750205"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  async function loadHomePage() {
+    const docRef = doc(db, "siteConfig", "landing");
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+
+      // 🔥 FEATURED VIDEO (matches your Firestore fields)
+      document.getElementById("videoTag").innerText = data.featVideoTag || "";
+      document.getElementById("heroTitle").innerText = data.featVideoTitle || "";
+      document.getElementById("heroSubtitle").innerText = data.featVideoDesc || "";
+
+      // Convert normal YouTube link to embed format automatically
+      if (data.featVideoUrl) {
+        const embedUrl = data.featVideoUrl.includes("watch?v=")
+          ? data.featVideoUrl.replace("watch?v=", "embed/")
+          : data.featVideoUrl;
+
+        document.getElementById("featuredVideo").src = embedUrl;
+      }
+
+      // 🔥 FEATURED TRACK BANNER (matches your Firestore fields)
+      document.getElementById("trackTag").innerText = data.bannerTag || "";
+      document.getElementById("trackTitle").innerText = data.bannerTitle || "";
+      document.getElementById("trackSubtitle").innerText = data.bannerDesc || "";
+      document.getElementById("trackButton").innerText = data.bannerBtnLabel || "";
+      document.getElementById("trackButton").href = data.bannerBtnUrl || "#";
+    }
+  }
+
+  loadHomePage();
+</script>
+
+  </body>
+</html>
